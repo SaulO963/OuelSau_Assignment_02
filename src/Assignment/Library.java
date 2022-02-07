@@ -30,11 +30,9 @@ public class Library {
     }
 
     /***
-     * Function prints open hours of library. Isn't static since I include the address
-     * of the library as well.
+     * Function prints open hours of library.
      */
-    public void openHours(){
-        System.out.println("Here are the open hours for " + address + ":");
+    public static void openHours(){
         System.out.println("================================ OPEN HOURS =================================");
         System.out.println("=== Mon ====== Tue ====== Wed ====== Thu ====== Fri ====== Sat ====== Sun ===");
         System.out.println("| 9AM-5PM || 9AM-5PM || 9AM-5PM || 9AM-5PM || 9AM-5PM || 9AM-5PM || 9AM-5PM |");
@@ -97,7 +95,7 @@ public class Library {
                 }
                 else{
                     b.returned();
-                    System.out.print(b.getName() + " has been returned.");
+                    System.out.println(b.getName() + " has been returned.");
                     return;
                 }
             }

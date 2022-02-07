@@ -17,14 +17,18 @@ public class Main {
      */
     public static void main(String[] args){
 
-        Library lib1 = new Library("101 Queen St.");
+        Library lib1 = new Library("120 Queen St.");
         Library lib2 = new Library("228 College St.");
 
         lib1.openHours();
         lib2.openHours();
 
+        System.out.println("");
+
         lib1.printAddress();
         lib2.printAddress();
+
+        System.out.println("");
 
         lib1.addBook(new Book("The DaVinci Code"));
         lib1.addBook(new Book("Le Petit Prince"));
@@ -34,14 +38,28 @@ public class Main {
         lib1.borrow("The Lord of the Rings");
         lib1.borrow("The Lord of the Rings");
 
+        System.out.println("");
+
         lib2.borrow("The Lord of the Rings");
 
+        System.out.println("");
+
         lib1.allBooks();
+
+        System.out.println("");
+
         lib2.allBooks();
+
+        System.out.println("");
 
         lib1.returned("The Lord of the Rings");
 
+        System.out.println("");
+
         lib1.allBooks();
+
+        System.out.println("");
+
         lib2.allBooks();
 
     }
