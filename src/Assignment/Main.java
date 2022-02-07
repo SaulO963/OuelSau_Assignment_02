@@ -1,6 +1,6 @@
 /**
  * Name: Saul Ouellet
- * Date: Feb 7tu 2022
+ * Date: Feb 7th 2022
  * Description: Program simulates a small library using custom Library and Book objects
  */
 
